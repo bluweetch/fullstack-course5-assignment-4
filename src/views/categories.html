@@ -1,0 +1,17 @@
+<div class="max-w-2xl w-full mx-auto px-8 py-14 flex flex-col text-center">
+  <a
+    ui-sref="home"
+    class="max-w-max text-sm font-medium px-4 py-1.5 border border-black/25 rounded-md mx-auto"
+    >Go to Home</a
+  >
+
+  <h1 class="text-2xl font-bold mt-8">Categories List</h1>
+
+  <section class="flex flex-col mt-4 text-blue-500 font-bold *:hover:underline">
+    <a
+      ui-sref="items({ categoryShortName: category.short_name })"
+      ng-repeat="category in controller.categories"
+      >{{ category.name }}</a
+    >
+  </section>
+</div>

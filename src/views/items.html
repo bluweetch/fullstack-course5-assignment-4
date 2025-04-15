@@ -1,0 +1,15 @@
+<div class="max-w-2xl w-full mx-auto px-8 py-14 flex flex-col text-center">
+  <a
+    ui-sref="categories"
+    class="max-w-max text-sm font-medium px-4 py-1.5 border border-black/25 rounded-md mx-auto"
+    >Go to Categories</a
+  >
+
+  <h1 class="text-2xl font-bold mt-8">{{ controller.category.name }}</h1>
+
+  <section class="flex flex-col mt-4 font-bold">
+    <span ng-repeat="item in controller.category.menu_items">
+      {{ $index + 1 }}. {{ item.name }}</span
+    >
+  </section>
+</div>
